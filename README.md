@@ -5,7 +5,7 @@ Differentiating between stars and galaxy based on features extracted from images
 Folder Structure 
 
 .
-|------KNN 
+|------KNN      
 |       |---- DataSheet.csv
 |       |---- knn.py
 |       |---- knnpickle_file
