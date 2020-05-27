@@ -3,7 +3,7 @@ Differentiating between stars and galaxy based on features extracted from images
 
 
 Folder Structure 
-
+```
 .
 |------KNN      
 |       |---- DataSheet.csv
@@ -25,4 +25,4 @@ Folder Structure
         |---- k_svmpickle_file
         |---- output_k_svm.txt
 
-
+```
