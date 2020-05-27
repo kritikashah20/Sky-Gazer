@@ -5,7 +5,7 @@ Differentiating between stars and galaxy based on features extracted from images
 Folder Structure 
 
 .
-|------KNN 
+|------KNN      
 |       |---- DataSheet.csv
 |       |---- knn.py
 |       |---- knnpickle_file
@@ -24,4 +24,5 @@ Folder Structure
         |---- kernel_svm.py
         |---- k_svmpickle_file
         |---- output_k_svm.txt
+
 
