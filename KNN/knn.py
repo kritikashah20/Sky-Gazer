@@ -10,11 +10,16 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix
 
+import os
 import time
 start_time = time.time()
 
+
+# Path to the dataset file
+DATASHEET_PATH = os.path.join("..", "Data", "DataSheet.csv")
+
 # Importing the dataset
-dataset = pd.read_csv('DataSheet.csv')
+dataset = pd.read_csv(DATASHEET_PATH)
 X = dataset.iloc[:, 1:10].values
 y = dataset.iloc[:, 10].values
 
@@ -33,6 +38,7 @@ classifier.fit(X_train, y_train)
 # Accuracy
 acc = classifier.score(X_test, y_test)
 print("\nAccuracy = ", acc*100,"%")
+
 
 # Predicting the Test set results
 knnPickle = open('knnpickle_file', 'wb')

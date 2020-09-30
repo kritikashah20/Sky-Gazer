@@ -10,12 +10,17 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix
-
+import os
 import time
+
+# starting the time counter
 start_time = time.time()
 
+# Path to the dataset file
+DATASHEET_PATH = os.path.join("..", "Data", "DataSheet.csv")
+
 # Importing the dataset
-dataset = pd.read_csv('DataSheet.csv')
+dataset = pd.read_csv(DATASHEET_PATH)
 X = dataset.iloc[:, 1:10].values
 y = dataset.iloc[:, 10].values
 
