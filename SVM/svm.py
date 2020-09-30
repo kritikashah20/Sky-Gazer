@@ -10,10 +10,16 @@ from sklearn import svm
 from sklearn import metrics
 import pickle
 import time
+import os
+
+# starting the time counter
 start_time = time.time()
 
+# Path to the dataset file
+DATASHEET_PATH = os.path.join("..", "Data", "DataSheet.csv")
+
 # Importing the dataset
-dataset = pd.read_csv('DataSheet.csv')
+dataset = pd.read_csv(DATASHEET_PATH)
 X = dataset.iloc[:, 1:10].values
 y = dataset.iloc[:, 10].values
 
