@@ -33,3 +33,5 @@ Folder Structure
 |------ README.md
 +
 ```
+
+### Instructions to run the project
